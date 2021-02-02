@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML & CSS Cheatsheet</title>
+        <link rel="icon" href="./Resources/ico.png">
+        <link href="./styles.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <h1>HTML & CSS Cheatsheet</h1>
+                <ul>
+                  <li><a class="navItem" href="./html.html">Useful HTML</a></li>
+                  <li><a class="navItem" href="./css.html">Useful CSS</a></li>
+                  <li><a class="navItem" href="./resources.html">Resources</a></li>
+                </ul>
+            </nav>
+
+            <main class="bio">
+                <img class="profile-picture" src="./Resources/1.jpg">
+                <h3>By Charl de Waal &copy 2021</h3>         
+       
+    </main>
+
+        </header>
+        <main>
+            <h2>Useful HTML Elements</h2>
+            <h3>Document Declaration and Starting Blocks</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tag-width">Tag</th>
+                        <th>Name</th>
+                        <th>Useful Attributes</th>
+                        <th>Description</th>
+                        <th>Example Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt!DOCTYPE html&gt</td> 
+                        <td class="name">Document Type</td> 
+                        <td class="att">-</td>
+                        <td class="description">Declare the document type as html</td> 
+                        <td class="example">&lt!DOCTYPE html&gt</td>
+                    </tr>
+
+                     <tr>
+                        <td class="tag">&lthtml&gt</td> 
+                        <td class="name">html tag</td> 
+                        <td class="att">-</td>
+                        <td class="description">All content should be wrapped in a html tag to insure that web browsers interpret the html code contained in the document correctly. The html element, the root of an HTML document, should be added after the !DOCTYPE declaration. </td> 
+                        <td class="example">&lthtml&gt...&lt/html&gt</td> 
+                    </tr>
+
+                    <tr>
+                       <td class="tag">&lthead&gt</td> 
+                       <td class="name">head</td> 
+                       <td class="att">-</td>
+                       <td class="description">Declares the head of the html document. The head should contain the web page title, links to external files and stylesheets and scripts.</td> 
+                       <td class="example">&lthead&gt...&lt/head&gt</td>
+                    </tr>
+
+                    <tr>
+                        <td class="tag">&lttitle&gt</td> 
+                        <td class="name">title</td> 
+                        <td class="att">-</td>
+                        <td class="description">Declares the web page's title. This title can be seen as the text in the webrowsers tab.</td> 
+                        <td class="example">&lttitle&gt 'insert website title here' &lt/title&gt</td> 
+                    </tr>
+
+                     <tr>
+                        <td class="tag">&ltlink&gt</td> 
+                        <td class="name">link</td> 
+                        <td class="att">href="url or relative path" rel="stylesheet" type="text/css"</td>
+                        <td class="description">The link tag is used to link external files, such as a CSS file.</td> 
+                        <td class="example">&ltlink href="./styles.css" rel="stylesheet" type="text/css"&gt</td>
+                    </tr>
+
+                </tbody>
+            </table>
+ 
+            
+            <h3>Document Structure (Non-Semantic HTML)</h3>
+            
+            <table>
+            <thead>
+                <tr>
+                    <th class="tag-width">Tag</th>
+                    <th>Name</th>
+                    <th>Useful Attributes</th>
+                    <th>Description</th>
+                    <th>Example Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tag">&ltbody&gt</td> 
+                    <td class="name">body</td> 
+                    <td class="att">-</td>
+                    <td class="description">Declares the start of the body of the html content. The body of the html document contains the majority of content displayed on the webpage.</td> 
+                    <td class="example">&ltbody&gt...&lt/body&gt</td>
+                </tr>
+                <tr>
+                    <td class="tag">&ltdiv&gt</td> 
+                    <td class="name">Div Element</td> 
+                    <td class="att">-</td>
+                    <td class="description">The div element is used as a container that divides an HTML document into sections and is short for “division”. Div elements can contain flow content such as headings, paragraphs, links, images, etc</td> 
+                    <td class="example">&ltdiv&gt...&lt/div&gt</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Document Structure (Semantic HTML)</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="tag-width">Tag</th>
+                    <th>Name</th>
+                    <th>Useful Attributes</th>
+                    <th>Description</th>
+                    <th>Example Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr>
+                    <td class="tag">&ltheader&gt</td> 
+                    <td class="name">header section</td> 
+                    <td class="att">-</td>
+                    <td class="description">Semantic HTML for a websites header section. This replaces using a div element to create a header in previous versions of HTML. This tag is not to be confused with the &lth1&gt header and &lthead&gt head tags, which serve different purposes entirely.</td> 
+                    <td class="example">&ltheader&gt...&lt/header&gt</td>
+                </tr>
+                 <tr>
+                    <td class="tag">&ltmain&gt</td> 
+                    <td class="name">main section</td> 
+                    <td class="att">-</td>
+                    <td class="description">Semantic HTML used to create a websites main body section. This replaces using a div element to create a section in previous versions of HTML.</td> 
+                    <td class="example">&ltmain&gt...&lt/main&gt</td>
+                </tr>
+                 <tr>
+                    <td class="tag">&ltfooter&gt</td> 
+                    <td class="name">footer section</td> 
+                    <td class="att">-</td>
+                    <td class="description">Semantic HTML used to create a web page's footer section. This replaces using a div element to create a footer section in previous versions of HTML.</td> 
+                    <td class="example">&ltfooter&gt...&lt/footer&gt</td> 
+                </tr>
+                 <tr>
+                    <td class="tag">&ltsection&gt</td> 
+                    <td class="name">section</td> 
+                    <td class="att">-</td>
+                    <td class="description">Semantic HTML used to group multiple elements into a single section of a web page.</td> 
+                    <td class="example">&ltsection&gt...&lt/section&gt</td>
+                </tr>
+                 <tr>
+                    <td class="tag">&ltarticle&gt</td> 
+                    <td class="name">article</td> 
+                    <td class="att">-</td>
+                    <td class="description">The article tag is a semantic HTML tag that is used to wrap text. This is done to ensure that web browsers and document readers create the correct document outline of our wep page. Wrapping content in a article tag also enables other webistes to easily reference certain sections of our web pages content by linking to the appropriate article. This also ensures better SEO results for our web page. The content between article tags should generally make sense on it's own.</td> 
+                    <td class="example">&ltarticle&gt...&ltarticle&gt</td>
+                </tr>
+                 <tr>
+                    <td class="tag">&ltaside&gt</td> 
+                    <td class="name">aside</td> 
+                    <td class="att">-</td>
+                    <td class="description">Aside tags are semantic HTML tags that are used to include additional information that can enhance another element but is not required. They are used to include out of context information.</td> 
+                    <td class="example">&ltaside&gt...&lt/aside&gt</td>
+                </tr>
+                <tr>
+                    <td class="tag">&ltfigure&gt<br>&ltfigcaption&gt</td> 
+                    <td class="name">figure and figcaption</td> 
+                    <td class="att">-</td>
+                    <td class="description">The figure element is used to encapsulate media such as an image, diagram. or code snippet. The figcaption element is used to describe the media encapsulated within the figure element. To embed a image use the &ltimg&gt tag within the figure element. Go to <a href="#image">&ltimg&gt</a></td> 
+                    <td class="example">&ltfigure&gt<br>&ltimg src="./dog.jpg"&gt<br>&ltfigcaption&gt<br>Photo of a cute dog<br>&lt/figcaption&gt<br>&lt/figure&gt</td> 
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Headers, Lists and Text Manipulation</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th class="tag-width">Tag</th>
+                    <th>Name</th>
+                    <th>Useful Attributes</th>
+                    <th>Description</th>
+                    <th>Example Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr>
+                    <td class="tag">&lth1&gt</td> 
+                    <td class="name">header</td> 
+                    <td class="att">-</td>
+                    <td class="description">Use elements h1 though h6 to create headers. h1 being the most prominent.</td> 
+                    <td class="example">&lth1&gtThis is a header&lt/h1&gt</td>
+                </tr>
+
+                 <tr>
+                    <td class="tag">&ltp&gt</td> 
+                    <td class="name">paragraph</td> 
+                    <td class="att">-</td>
+                    <td class="description">Contains and displays a block of text.</td> 
+                    <td class="example">&ltp&gt...&lt/p&gt</td>
+                </tr>
+
+                <tr>
+                    <td class="tag">&ltem&gt</td> 
+                    <td class="name">Emphasis</td> 
+                    <td class="att">-</td>
+                    <td class="description">Emphasises a piece of text and web browsers will usually <em>italicize</em> the piece of text.</td> 
+                    <td class="example">&ltem&gt<em>This text is written in em tags</em>&lt/em&gt</td> 
+                </tr>
+
+                <tr>
+                    <td class="tag">&ltbr&gt</td> 
+                    <td class="name">Line Break</td> 
+                    <td class="att">-</td>
+                    <td class="description">Will create a lin break in text. Does not require a closing tag.</td> 
+                    <td class="example">Summer sun &ltbr&gt<br>shines warm on the skin &ltbr&gt<br>Oh the joy!&ltbr&gt<br>of summer</td> 
+                </tr>
+
+                 <tr>
+                    <td class="tag">&ltol&gt</td> 
+                    <td class="name">Ordered List</td> 
+                    <td class="att">-</td>
+                    <td class="description">The ordered list tag is used to create a numbered list of items.</td> 
+                    <td class="example">&ltol&gt...&lt/ol&gt</td>
+                </tr>
+
+                 <tr>
+                    <td class="tag">&ltul&gt</td> 
+                    <td class="name">Unordered List</td> 
+                    <td class="att">-</td>
+                    <td class="description">The unordered list tag is used to create a unordered list of items (bullet points).</td> 
+                    <td class="example">&ltul&gt...&lt/ul&gt</td> 
+                </tr>
+
+                 <tr>
+                    <td class="tag">&ltli&gt</td> 
+                    <td class="name">List Item</td> 
+                    <td class="att">-</td>
+                    <td class="description">Items are added to ordered or unordered list using the 'li' tag.</td> 
+                    <td class="example">&ltul&gt<br>&ltli&gtApples&lt/li&gt<br>&ltli&gtOranges&lt/li&gt<br>&lt/ul&gt</td>
+                </tr>
+
+                <tr>
+                    <td class="tag">&ltstrong&gt</td> 
+                    <td class="name">Strong Element</td> 
+                    <td class="att">-</td>
+                    <td class="description">The Strong element highlights important text, making it <strong>bold</strong></td> 
+                    <td class="example">&ltstrong&gt...&lt/strong&gt</td> 
+                </tr>
+
+                <tr>
+                    <td class="tag">&ltspan&gt</td> 
+                    <td class="name">Span Element</td> 
+                    <td class="att">-</td>
+                    <td class="description">The span element is an inline container for text and can be used to group text for styling purposes. However, as span is a generic container to separate pieces of text from a larger body of text, its use should be avoided if a more semantic element is available.</td> 
+                    <td class="example">&ltspan&gt...&lt/span&gt</td> 
+                </tr>
+                <tr>
+                    <td class="tag">&lta&gt</td> 
+                    <td class="name">Anchor Element</td> 
+                    <td class="att">href="url" target=""</td>
+                    <td class="description">The anchor element is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, files on the same server, a location on the same page, or any other URL via the hyperlink reference attribute, href. The target attribute on an anchor element specifies where a hyperlink should be opened. A target value of "_blank" will tell the browser to open the hyperlink in a new tab. The anchor element can create hyperlinks to different parts of the same HTML document using the href attribute to point to the desired location with # followed by the id of the element to link to.</td> 
+                    <td class="example">&lta href="www.google.com" target="_blank"&gtVisit this site.&lt/a&gt</td> 
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Embedded Media</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th class="tag-width">Tag</th>
+                    <th>Name</th>
+                    <th>Useful Attributes</th>
+                    <th>Description</th>
+                    <th>Example Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tag image">&ltimg&gt</td> 
+                    <td class="name">image</td> 
+                    <td class="att">src="url" alt="Text describing the image"</td>
+                    <td class="description">HTML image tags embed images in a document. The image tag does not need a closing img tag.</td> 
+                    <td class="example">&ltimg class="profile-picture" src="./Resources/1.jpg" alt="Photo of Charl de Waal in the Cederberge"&gt</td> 
+                </tr>
+                <tr>
+                    <td class="tag">&ltvideo&gt</td> 
+                    <td class="name">Video</td> 
+                    <td class="att">src="url" controls</td>
+                    <td class="description">Embeds a media player for video playback. The src attribute will contain the URL to the video. Adding the controls attribute will display video controls in the media player. The text between the opening and closing tag is used as a fallback for browsers that do not support the element.</td> 
+                    <td class="example">&ltvideo src="test-video.mp4" controls&gtVideo not supported&lt/video&gt</td> 
+                </tr>
+                <tr>
+                    <td class="tag">&ltaudio&gt</td> 
+                    <td class="name">Audio</td> 
+                    <td class="att">src="url" controls</td>
+                    <td class="description">Embed audio into a website. The controls attribute adds audio player controls to the element.</td> 
+                    <td class="example">&ltaudio src="test.mp3" controls&gt&lt/audio&gt</td> 
+                </tr>
+                <tr>
+                    <td class="tag">&ltembed&gt</td> 
+                    <td class="name">Embed</td> 
+                    <td class="att">src="url"</td>
+                    <td class="description">The embed tag can be used to embed any type of media and does not need a closing tag.</td> 
+                    <td class="example">&ltembed src="audio.mp3"&gt</td> 
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Comments</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="tag-width">Tag</th>
+                    <th>Name</th>
+                    <th>Useful Attributes</th>
+                    <th>Description</th>
+                    <th>Example Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tag">&lt!--- ---&gt</td> 
+                    <td class="name">Comment</td> 
+                    <td class="att">-</td>
+                    <td class="description">Leave a comment or comment out a piece of code.</td> 
+                    <td class="example">&lt!---This is a HTML comment---&gt</td> 
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!---Empty Table 
+        <table>
+            <thead>
+                <tr>
+                    <th class="tag-width">Tag</th>
+                    <th>Name</th>
+                    <th>Useful Attributes</th>
+                    <th>Description</th>
+                    <th>Example Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tag">&lt&gt</td> 
+                    <td class="name"></td> 
+                    <td class="att">-</td>
+                    <td class="description"></td> 
+                    <td class="example"></td> 
+                </tr>
+                <tr>
+                    <td class="tag">&lt&gt</td> 
+                    <td class="name"></td> 
+                    <td class="att">-</td>
+                    <td class="description"></td> 
+                    <td class="example"></td> 
+                </tr>
+            </tbody>
+        </table> --->
+        </main>
+    </body>
+</html>
